@@ -2,9 +2,6 @@
 # Chess Piece Classification Project
 
 
-Test (Demo) : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing
-
-
 
 ### Project Structure
 
@@ -37,6 +34,14 @@ chessman_classification/
 └── report/
 └── report.pdf
 ```
+
+
+
+
+Test (Demo) : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing
+
+
+
 
 ## Objective
 
@@ -102,9 +107,15 @@ Access the Streamlit interface:
 
 Network URL: http://localhost:8501
 External URL: http://your-external-ip:8501
+
+
 Access the FastAPI documentation:
 
 URL: http://localhost:8000/docs
+
+
+The Predict endoint: http://localhost:8000/docs/predict 
+
 
 ```
 

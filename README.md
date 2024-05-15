@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ### Step 3: Download Model weight 
 
- I use VGG16 as the base model, download the model weight and store in the model directory. link to the model https://huggingface.co/matthias-wright/vgg/blob/main/vgg16_weights.h5
+ I used VGG16 as the base model, download the model weight and store in the model directory. link to the model https://huggingface.co/matthias-wright/vgg/blob/main/vgg16_weights.h5
 
 
 ### Step 3: Train the Model
@@ -82,9 +82,20 @@ The model can be train in two ways
 
 ### Build and run the Docker containers:
 ```bash
+
+# Navigate to the docker directory 
 cd docker
+
+
 docker-compose up --build
+#Starts the containers
 ```
+
+```bash
+docker-compose down
+#stops the containers
+```
+
 
 ```
 Access the Streamlit interface:
@@ -139,6 +150,6 @@ streamlit run src/app.py
 ```
 
 
-
+Also Ensure, when the Docker containers are up, the streamlit application is sending requests  to the right endpoints:
 
 

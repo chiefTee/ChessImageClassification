@@ -73,3 +73,7 @@ pip install -r requirements.txt
 1.Using the /notebooks/Chessman_Classification.ipynb notebook ; make sure to load the path to the VGG16 weights before running the notebook.\n
 2.Running the Src/ (data_processing.py,model.py,train.py,evaluate.py) script to start the pipelines in that  order which is more structed and production friendly 
 
+
+
+
+Proof of concept link : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing

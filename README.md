@@ -1,6 +1,11 @@
 
 # Chess Piece Classification Project
 
+
+Test (Demo) : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing
+
+
+
 ### Project Structure
 
 ```
@@ -76,8 +81,7 @@ The model can be train in two ways
 
 
 ### Build and run the Docker containers:
-```
-bash
+```bash
 cd docker
 docker-compose up --build
 ```
@@ -93,24 +97,48 @@ URL: http://localhost:8000/docs
 
 ```
 
-Usage
+### Usage
+
 Upload an image of a chess piece using the Streamlit interface.
 The interface will display the classification result along with metrics like latency and throughput.
-Troubleshooting
+
+
+
+### Troubleshooting
+
+
 Common Issues and Solutions
 Docker Network Not Found:
 
 Ensure the docker-compose.yml file has the correct network configuration.
+```bash
 Run docker network create chessman_net to create the network manually.
+
+```
+
 API Not Accessible:
 
-Check if the API container is running using docker ps.
-Verify the API is accessible using curl -X POST "http://localhost:8000/predict".
+Check if the API container is running using
+
+```docker ps.
+
+```
+Verify the API is accessible using 
+```
+curl -X POST "http://localhost:8000/predict".
+````
+
+You can also Navigate to the /src to run the Streamlit and the fastapi directly 
+
+```bash
+uvicorn src.api:app --reload
+```
+
+```bash
+streamlit run src/app.py  
+```
 
 
 
 
 
-
-
-Test (Demo) : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing

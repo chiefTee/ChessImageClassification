@@ -1,8 +1,8 @@
 
 # Chess Piece Classification Project
 
-## Project Structure
-
+###Project Structure
+```
 chessman_classification/
 ├── data/
 │ └── Chessman/
@@ -30,8 +30,7 @@ chessman_classification/
 ├── README.md
 └── report/
 └── report.pdf
-
-
+```
 
 ## Objective
 
@@ -76,4 +75,4 @@ pip install -r requirements.txt
 
 
 
-Proof of concept link : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing
+Test (Demo) : https://drive.google.com/file/d/1IqXkpU8tcyTwnbRIPdjbxqe6TpGUcb91/view?usp=sharing

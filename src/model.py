@@ -5,6 +5,7 @@ from tensorflow.keras.optimizers import Adam
 
 def build_transfer_learning_model(learning_rate=0.00001):
     base_model = VGG16(include_top=False, input_shape=(150, 150, 3))
+    base_model.load_weights('path_to_VGG16_weights')  # Path to the downloaded weights
     
     # Unfreeze the top layers of the base model
     for layer in base_model.layers[-4:]:

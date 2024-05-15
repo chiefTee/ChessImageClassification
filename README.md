@@ -63,13 +63,13 @@ Install the required Python packages using the requirements.txt file:
 pip install -r requirements.txt
 ```
 
-### Step 3 : Download model weight 
+### Step 3: Download Model weight 
 
  I use VGG16 as the base model, download the model weight and store in the model directory. link to the model https://huggingface.co/matthias-wright/vgg/blob/main/vgg16_weights.h5
 
 
 ### Step 3: Train the Model
  The model can be train in two ways
-1.Using the /notebooks/Chessman_Classification.ipynb notebook ; make sure to load the path to the VGG16 weights before running the notebook.
+1.Using the /notebooks/Chessman_Classification.ipynb notebook ; make sure to load the path to the VGG16 weights before running the notebook.\n
 2.Running the Src/ (data_processing.py,model.py,train.py,evaluate.py) script to start the pipelines in that  order which is more structed and production friendly 
 

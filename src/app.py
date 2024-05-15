@@ -3,9 +3,21 @@ import requests
 from PIL import Image
 import io
 
-st.set_page_config(page_title="Chessman Classification")
-
+# Title of the application
 st.title("Chessman Classification")
+
+# About the project
+st.subheader("About this Project")
+st.write("This application allows you to classify images of chess pieces. Upload an image of a chess piece, and the model will predict whether it is a Bishop, King, Knight, Pawn, Queen, or Rook.")
+
+# How to use the application
+st.subheader("How to Use")
+st.write("""
+1. Click on the Browse files button to upload an image of a chess piece.
+2. Once the image is uploaded, it will be displayed on the screen.
+3. Click the Predict button to get the classification result.
+4. The predicted class will be displayed below the image.
+""")
 
 # File uploader
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])

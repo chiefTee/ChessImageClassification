@@ -1,7 +1,8 @@
 
 # Chess Piece Classification Project
 
-###Project Structure
+### Project Structure
+
 ```
 chessman_classification/
 ├── data/
@@ -68,9 +69,46 @@ pip install -r requirements.txt
 
 
 ### Step 3: Train the Model
- The model can be train in two ways
-1.Using the /notebooks/Chessman_Classification.ipynb notebook ; make sure to load the path to the VGG16 weights before running the notebook.\n
-2.Running the Src/ (data_processing.py,model.py,train.py,evaluate.py) script to start the pipelines in that  order which is more structed and production friendly 
+
+The model can be train in two ways
+1.Using the /notebooks/Chessman_Classification.ipynb notebook ; make sure to load the path to the VGG16 weights before running the notebook.
+2.Running the Src/ (data_processing.py,model.py,train.py,evaluate.py) script to start the pipelines in that  order which is more structed and production grade.
+
+
+### Build and run the Docker containers:
+```
+bash
+cd docker
+docker-compose up --build
+```
+
+```
+Access the Streamlit interface:
+
+Network URL: http://localhost:8501
+External URL: http://your-external-ip:8501
+Access the FastAPI documentation:
+
+URL: http://localhost:8000/docs
+
+```
+
+Usage
+Upload an image of a chess piece using the Streamlit interface.
+The interface will display the classification result along with metrics like latency and throughput.
+Troubleshooting
+Common Issues and Solutions
+Docker Network Not Found:
+
+Ensure the docker-compose.yml file has the correct network configuration.
+Run docker network create chessman_net to create the network manually.
+API Not Accessible:
+
+Check if the API container is running using docker ps.
+Verify the API is accessible using curl -X POST "http://localhost:8000/predict".
+
+
+
 
 
 

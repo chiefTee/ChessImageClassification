@@ -59,8 +59,10 @@ Clone the project repository from GitHub:
 ```bash
 git clone <repository_url>
 cd chessman_classification
-Step 2: Prepare the Data
-Place the Chessman Image Dataset in the data/Chessman/ directory. The dataset should be organized into subdirectories for each chess piece (Bishop, King, Knight, Pawn, Queen, Rook).
+```
+### Step 2: Prepare the Data
+
+Place the Chessman Image Dataset in the data directory. The dataset should be organized into subdirectories for each chess piece (Bishop, King, Knight, Pawn, Queen, Rook).
 
 Step 3: Build and Run Docker Containers
 Navigate to the docker/ directory and run Docker Compose to build and start the containers:
@@ -191,3 +193,4 @@ File Not Found Errors: Ensure all paths in the Dockerfiles are correct and files
 Streamlit Interface Not Loading: Ensure the Streamlit container is running and accessible at the specified port.
 Conclusion
 This project involves building and deploying a machine learning model for chess piece classification using Docker. The REST API and Streamlit interface provide an accessible way to interact with the model. Follow the steps outlined above to set up and run the project successfully. For more details, refer to the report in the report/ directory and the code documentation.
+

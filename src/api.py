@@ -9,7 +9,7 @@ print("api.py is being executed")  # Add this line for debugging
 
 app = FastAPI()
 model = load_model('notebooks/best_model.keras')
-class_names = ['Bishop', 'King', 'Knight', 'Pawn', 'Queen', 'Rook']  # Replace with actual class names
+class_names = ['Bishop', 'King', 'Knight', 'Pawn', 'Queen', 'Rook']  # Predicted class names
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):

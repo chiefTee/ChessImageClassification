@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 from src.data_preprocessing import load_and_preprocess_data
 
 data_dir = '../data/Chessman'
-_, val_data = load_and_preprocess_data(data_dir)
+val_data = load_and_preprocess_data(data_dir)
 
 model = load_model('best_model.h5')
 
